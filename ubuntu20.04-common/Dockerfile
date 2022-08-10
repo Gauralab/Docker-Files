@@ -11,9 +11,11 @@ RUN apt-get update \
     && curl -sL https://deb.nodesource.com/setup_16.x | bash - \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
-    && apt-get install -y mysql-client \
-    && apt-get install -y postgresql-client \
-    && apt-get install -y mc \
+    && apt-get install -y mysql-client postgresql-client mc python3.8-venv python3 python3-venv libaugeas0\
     && apt-get -y autoremove \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+#RUN python3 -m venv /opt/certbot/ && /opt/certbot/bin/pip install --upgrade pip \
+#    && /opt/certbot/bin/pip install certbot\
+#    && ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+
