@@ -14,7 +14,7 @@ RUN apt-get update \
       php8.1-xml php8.1-zip php8.1-bcmath php8.1-soap \
       php8.1-intl php8.1-readline php8.1-pcov \
       php8.1-msgpack php8.1-igbinary php8.1-ldap \
-      php8.1-redis php8.1-swoole \
+      php8.1-redis php8.1-swoole php8.1-imagick\
       nodejs \
    && apt-get -y autoremove \
    && apt-get clean \
