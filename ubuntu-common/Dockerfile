@@ -16,6 +16,8 @@ RUN apt-get update \
     && apt-get -y autoremove \
     && apt-get clean \
     && sed -i -e \
-    's/# ru_RU.UTF-8 UTF-8 en_US.UTF-8/ru_RU.UTF-8 UTF-8 en_US.UTF-8/' /etc/locale.gen \
+    's/# ru_RU.UTF-8 UTF-8/ru_RU.UTF-8 UTF-8/' /etc/locale.gen \
+    && sed -i -e \
+    's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
     && locale-gen \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
