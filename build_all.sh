@@ -5,6 +5,6 @@
 #&& cd ../php8.1-common && ./build.sh \
 cd ubuntu-common && ./build.sh \
 && cd ../php-common && ./build.sh \
-&& cd ../mailhog && ./bild.sh \
-&& cd ../certbot && ./bild.sh \
+&& cd ../mailhog && ./build.sh \
+&& cd ../certbot && ./build.sh \
 && cd ../
