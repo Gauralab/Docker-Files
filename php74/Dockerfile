@@ -18,6 +18,7 @@ RUN add-apt-repository -y ppa:ondrej/php \
       php${PHP_VERSION}-intl php${PHP_VERSION}-readline php${PHP_VERSION}-pcov \
       php${PHP_VERSION}-msgpack php${PHP_VERSION}-igbinary php${PHP_VERSION}-ldap \
       php${PHP_VERSION}-redis php${PHP_VERSION}-swoole php${PHP_VERSION}-imagick\
+      php${PHP_VERSION}-yaml\
    && apt-get -y autoremove \
    && apt-get clean \
    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
