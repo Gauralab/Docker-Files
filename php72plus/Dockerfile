@@ -1,7 +1,7 @@
 ARG BASE_IMAGE=gauralab/ubuntu-common:latest
 FROM ${BASE_IMAGE}
 
-ARG PHP_VERSION=8.1
+ARG PHP_VERSION=7.4
 LABEL maintainer="Ivan Beloshabski"
 
 WORKDIR /var/www
