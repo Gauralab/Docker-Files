@@ -20,7 +20,7 @@ RUN add-apt-repository -y ppa:ondrej/php \
       php${PHP_VERSION}-intl php${PHP_VERSION}-readline php${PHP_VERSION}-pcov \
       php${PHP_VERSION}-msgpack php${PHP_VERSION}-igbinary php${PHP_VERSION}-ldap \
       php${PHP_VERSION}-redis php${PHP_VERSION}-swoole php${PHP_VERSION}-imagick\
-      php${PHP_VERSION}-yaml php${PHP_VERSION}-dev php-pear unixodbc unixodbc-dev \
+      php${PHP_VERSION}-yaml php${PHP_VERSION}-dev php${PHP_VERSION}-opcache php-pear unixodbc unixodbc-dev \
    && ACCEPT_EULA=Y apt-get install -y msodbcsql18 \
    && pecl install sqlsrv pdo_sqlsrv \ 
    && echo '; configuration for php common module' > /etc/php/${PHP_VERSION}/mods-available/sqlsrv.ini \
